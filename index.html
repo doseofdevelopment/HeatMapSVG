@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Heat Map</title>
+</head>
+
+<body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <h3 id="description">1753 - 2015: base temperature 8.66℃
+    </h3>
+
+    <svg id='canvas'>
+
+    </svg>
+
+    <svg id="legend">
+        <g>
+            <rect x='10' y='0' width='30' height='30' fill='#fff33b' />
+            <text x='60' y='20' fill='#023e8a'>Variance < -2</text>
+        </g>
+        <g>
+            <rect x='10' y='30' width='30' height='30' fill='#fdc70c' />
+            <text x='60' y='50' fill='#023e8a'>Variance < -1</text>
+        </g>
+        <g>
+            <rect x='10' y='60' width='30' height='30' fill='#f3903f' />
+            <text x='60' y='80' fill='#023e8a'>Variance = 0</text>
+        </g>
+        <g>
+            <rect x='10' y='90' width='30' height='30' fill='#ed683c' />
+            <text x='60' y='110' fill='#023e8a'>Variance < 1</text>
+        </g>
+        <g>
+            <rect x='10' y='120' width='30' height='30' fill='#e93e3a' />
+            <text x='60' y='140' fill='#023e8a'>Variance > 1</text>
+        </g>
+       
+       
+    </svg>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
